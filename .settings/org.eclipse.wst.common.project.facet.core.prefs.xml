@@ -10,6 +10,12 @@
       <node name="schema-1">
         <attribute name="location" value="platform:/resource/LeaveApplicationModel/src/main/resources/test.xsd"/>
       </node>
+      <node name="schema-2">
+        <attribute name="location" value="platform:/resource/LeaveApplicationModel/src/main/resources/CreateRoleInput.xsd"/>
+      </node>
+      <node name="schema-3">
+        <attribute name="location" value="platform:/resource/LeaveApplicationModel/src/main/resources/GetRoleInput.xsd"/>
+      </node>
     </node>
   </facet>
 </root>
