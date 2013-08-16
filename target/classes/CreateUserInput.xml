@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreateUserInput>
+	<userName>String</userName>
+	<password>String</password>
+	<managerId>10000000</managerId>
+	<roleId>10000000</roleId>
+</CreateUserInput>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UpdateApplicationInput>
+	<id>100000000000</id>
+	<to>1000000000</to>
+	<from>1000000000</from>
+	<content>String</content>
+	<submissionDate>08/15/2013</submissionDate>
+	<status>P</status>
+</UpdateApplicationInput>

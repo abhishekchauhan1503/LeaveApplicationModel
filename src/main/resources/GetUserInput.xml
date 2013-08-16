@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetUserInput>
+	<userId>1000<!-- Integer Value  --></userId>
+	<userName>String</userName>
+</GetUserInput>
