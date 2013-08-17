@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreateNewMessageInput>
+	<to>10000000000</to>
+	<from>10000000000</from>
+	<content>Content</content>
+	<creationDate>2013-08-16</creationDate>
+	<read>false</read>
+</CreateNewMessageInput>

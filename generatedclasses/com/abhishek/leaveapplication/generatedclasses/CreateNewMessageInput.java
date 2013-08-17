@@ -25,12 +25,10 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="to" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="from" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *         &lt;element name="content" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="submissionDate" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="read" type="{http://www.w3.org/2001/XMLSchema}boolean"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -41,41 +39,19 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "id",
     "to",
     "from",
     "content",
-    "submissionDate",
-    "status"
+    "read"
 })
-//@XmlRootElement(name = "UpdateApplicationInput")
-public class UpdateApplicationInput {
+//@XmlRootElement(name = "CreateNewMessageInput")
+public class CreateNewMessageInput {
 
-    protected long id;
     protected long to;
     protected long from;
     @XmlElement(required = true)
     protected String content;
-    @XmlElement(required = true)
-    protected String submissionDate;
-    @XmlElement(required = true)
-    protected String status;
-
-    /**
-     * Gets the value of the id property.
-     * 
-     */
-    public long getId() {
-        return id;
-    }
-
-    /**
-     * Sets the value of the id property.
-     * 
-     */
-    public void setId(long value) {
-        this.id = value;
-    }
+    protected boolean read;
 
     /**
      * Gets the value of the to property.
@@ -134,51 +110,19 @@ public class UpdateApplicationInput {
     }
 
     /**
-     * Gets the value of the submissionDate property.
+     * Gets the value of the read property.
      * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
      */
-    public String getSubmissionDate() {
-        return submissionDate;
+    public boolean isRead() {
+        return read;
     }
 
     /**
-     * Sets the value of the submissionDate property.
+     * Sets the value of the read property.
      * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
      */
-    public void setSubmissionDate(String value) {
-        this.submissionDate = value;
-    }
-
-    /**
-     * Gets the value of the status property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getStatus() {
-        return status;
-    }
-
-    /**
-     * Sets the value of the status property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setStatus(String value) {
-        this.status = value;
+    public void setRead(boolean value) {
+        this.read = value;
     }
 
 }
