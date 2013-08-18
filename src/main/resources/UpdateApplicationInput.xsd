@@ -7,7 +7,7 @@
 				<xs:element type="xs:long" name="to" />
 				<xs:element type="xs:long" name="from" />
 				<xs:element type="xs:string" name="content" />
-				<xs:element type="xs:string" name="submissionDate" />
+				<xs:element type="xs:date" name="submissionDate" />
 				<xs:element type="xs:string" name="status" />
 			</xs:sequence>
 		</xs:complexType>

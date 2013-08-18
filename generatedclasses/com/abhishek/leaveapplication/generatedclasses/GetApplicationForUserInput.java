@@ -24,7 +24,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="roleId" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="userId" type="{http://www.w3.org/2001/XMLSchema}long"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -35,27 +35,27 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "roleId"
+    "userId"
 })
-@XmlRootElement(name = "GetRoleInput")
-public class GetRoleInput {
+@XmlRootElement(name = "GetApplicationForUserInput")
+public class GetApplicationForUserInput {
 
-    protected int roleId;
+    protected long userId;
 
     /**
-     * Gets the value of the roleId property.
+     * Gets the value of the userId property.
      * 
      */
-    public int getRoleId() {
-        return roleId;
+    public long getUserId() {
+        return userId;
     }
 
     /**
-     * Sets the value of the roleId property.
+     * Sets the value of the userId property.
      * 
      */
-    public void setRoleId(int value) {
-        this.roleId = value;
+    public void setUserId(long value) {
+        this.userId = value;
     }
 
 }
