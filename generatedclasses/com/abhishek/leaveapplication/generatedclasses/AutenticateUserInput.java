@@ -25,10 +25,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="to" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="from" type="{http://www.w3.org/2001/XMLSchema}long"/>
- *         &lt;element name="content" type="{http://www.w3.org/2001/XMLSchema}string"/>
- *         &lt;element name="status" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="userName" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="password" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -39,99 +37,63 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "to",
-    "from",
-    "content",
-    "status"
+    "userName",
+    "password"
 })
-@XmlRootElement(name = "CreateApplicationInput")
-public class CreateApplicationInput {
+@XmlRootElement(name = "AutenticateUserInput")
+public class AutenticateUserInput {
 
-    protected long to;
-    protected long from;
     @XmlElement(required = true)
-    protected String content;
+    protected String userName;
     @XmlElement(required = true)
-    protected String status;
+    protected String password;
 
     /**
-     * Gets the value of the to property.
-     * 
-     */
-    public long getTo() {
-        return to;
-    }
-
-    /**
-     * Sets the value of the to property.
-     * 
-     */
-    public void setTo(long value) {
-        this.to = value;
-    }
-
-    /**
-     * Gets the value of the from property.
-     * 
-     */
-    public long getFrom() {
-        return from;
-    }
-
-    /**
-     * Sets the value of the from property.
-     * 
-     */
-    public void setFrom(long value) {
-        this.from = value;
-    }
-
-    /**
-     * Gets the value of the content property.
+     * Gets the value of the userName property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getContent() {
-        return content;
+    public String getUserName() {
+        return userName;
     }
 
     /**
-     * Sets the value of the content property.
+     * Sets the value of the userName property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setContent(String value) {
-        this.content = value;
+    public void setUserName(String value) {
+        this.userName = value;
     }
 
     /**
-     * Gets the value of the status property.
+     * Gets the value of the password property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getStatus() {
-        return status;
+    public String getPassword() {
+        return password;
     }
 
     /**
-     * Sets the value of the status property.
+     * Sets the value of the password property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setStatus(String value) {
-        this.status = value;
+    public void setPassword(String value) {
+        this.password = value;
     }
 
 }
